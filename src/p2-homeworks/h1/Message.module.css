@@ -1,0 +1,53 @@
+.message_around {
+    padding: 10px;
+    background-color: greenyellow;
+}
+
+.avatar{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 5px;
+}
+.avatar img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+.message_name {
+    color: cornflowerblue;
+}
+
+.message {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 200px;
+    background-color: darkgreen;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 15px;
+    position: relative;
+}
+.message:before{
+    position: absolute;
+    content:'';
+    left: -10px;
+    bottom: 0px;
+    border: 16px solid transparent;
+    border-bottom: 30px solid darkgreen;
+
+}
+
+
+
+.message_text{
+    color: white;
+    font-size: 16px;
+}
+
+.time {
+    color: gray;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: right;
+}
