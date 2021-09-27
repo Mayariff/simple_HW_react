@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.a{
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+    text-align: left;
+    font-size: 25px;
+    padding: 10px;
+}
+.a h1,
+.a h2 {
+    padding: 0;
+    margin: 0;
+}
+.a h1 {
+    font-size: 120px;
+}
+.a h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #c20100;
+}
+.a div {
+   border-top: 3px dashed black;
+}
+.b{
+    display: flex;
+    text-align: right;
+}
+.b img {
+    height: 50vh;
+}
