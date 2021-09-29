@@ -66,7 +66,9 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                     />
                 ) : (<>
                     <img onDoubleClick={onDoubleClickCallBack}
-                        src={'https://i.pinimg.com/originals/7c/ef/ec/7cefec18b132e4f74b4b41e172698230.png'} className={s.icon} />
+                        src={'https://i.pinimg.com/originals/7c/ef/ec/7cefec18b132e4f74b4b41e172698230.png'}
+                         className={s.icon}
+                          alt={'icon'}/>
                     <span
                         onDoubleClick={onDoubleClickCallBack}
                         className={spanClassName}
