@@ -1,6 +1,5 @@
 .message_around {
     padding: 10px;
-    background-color: greenyellow;
 }
 
 .avatar{
@@ -32,7 +31,7 @@
     position: absolute;
     content:'';
     left: -10px;
-    bottom: 0px;
+    bottom: 0;
     border: 16px solid transparent;
     border-bottom: 30px solid darkgreen;
 

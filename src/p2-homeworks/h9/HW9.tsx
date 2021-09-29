@@ -11,9 +11,6 @@ function HW9() {
             <Clock/>
 
             <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeClock/>*/}
-            <hr/>
         </div>
     )
 }

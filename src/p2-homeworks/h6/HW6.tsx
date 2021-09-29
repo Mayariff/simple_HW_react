@@ -8,7 +8,7 @@ export function HW6() {
     useEffect(()=>{
        const NewValue= restoreState<string>('editable-span-value', value)
         setValue(NewValue)
-    },[])
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
 
 
     const save = () => {

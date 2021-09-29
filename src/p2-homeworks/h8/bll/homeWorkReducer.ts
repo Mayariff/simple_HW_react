@@ -24,10 +24,3 @@ export const homeWorkReducer = (state: Array<UserType>, action: ActionType):Arra
             return state
     }
 }
-/*
-export const sort =(payload:'up'|'down' )=> {
-    return { type: 'sort', payload}
-}
-export const check =(payload:number)=> {
-    return { type: 'check', payload}
-}*/
