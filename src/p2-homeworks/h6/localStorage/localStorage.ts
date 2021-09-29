@@ -9,9 +9,14 @@ export function saveState<T>(key: string, state: T) {
 export function restoreState<T>(key: string, defaultState: T) {
     let state = defaultState
     const stateAsString = localStorage.getItem(key)
-    if (stateAsString !== null) state = JSON.parse(stateAsString) as T
+    if (stateAsString) state = JSON.parse(stateAsString) as T
     return state
 }
+export function clearState<T>(key: string, defaultState: T) {
+    localStorage.clear()
+}
+
+/*
 
 // ---------------------------------------------------------------------------------------------------------------
 // пример использования:
@@ -25,3 +30,4 @@ saveState<StateType>('test', {x: 'A', y: 1})
 
 // получем в переменную state объект из ячейки 'test' или дэфолтный объект если ячейка пуста
 const state: StateType = restoreState<StateType>('test', {x: '', y: 0})
+*/

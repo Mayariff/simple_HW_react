@@ -1,0 +1,14 @@
+
+.icon {
+    display: inline-block;
+    height: 20px;
+    opacity: 1;
+    width: 20px;
+    margin: 1px;
+}
+.className {
+    text-decoration: underline #989898;
+    color: #009de0;
+    font-weight: 600 ;
+    font-size: 20px;
+}

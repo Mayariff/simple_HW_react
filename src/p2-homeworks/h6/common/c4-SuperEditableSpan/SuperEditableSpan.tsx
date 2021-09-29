@@ -1,5 +1,7 @@
 import React, {DetailedHTMLProps, InputHTMLAttributes, HTMLAttributes, useState} from 'react'
 import SuperInputText from '../../../h4/common/c1-SuperInputText/SuperInputText'
+import s from '../c4-SuperEditableSpan/SuperEditableSpan.module.css'
+
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
@@ -30,23 +32,26 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     const [editMode, setEditMode] = useState<boolean>(false)
     const {children, onDoubleClick, className, ...restSpanProps} = spanProps || {}
 
-    const onEnterCallback = () => {
-        // setEditMode() // выключить editMode при нажатии Enter
 
+    const onEnterCallback = () => {
+        setEditMode(false)
+        // выключить editMode при нажатии Enter
         onEnter && onEnter()
+
     }
     const onBlurCallback = (e: React.FocusEvent<HTMLInputElement>) => {
-        // setEditMode() // выключить editMode при нажатии за пределами инпута
+       setEditMode(false)
+        // выключить editMode при нажатии за пределами инпута
 
         onBlur && onBlur(e)
     }
     const onDoubleClickCallBack = (e: React.MouseEvent<HTMLSpanElement, MouseEvent>) => {
-        // setEditMode() // включить editMode при двойном клике
-
+        setEditMode(true)
+        // включить editMode при двойном клике
         onDoubleClick && onDoubleClick(e)
     }
+    const spanClassName = s.className
 
-    const spanClassName = `${'сделать красивый стиль для спана'} ${className}`
 
     return (
         <>
@@ -59,17 +64,17 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
 
                         {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
                     />
-                ) : (
+                ) : (<>
+                    <img onDoubleClick={onDoubleClickCallBack}
+                        src={'https://i.pinimg.com/originals/7c/ef/ec/7cefec18b132e4f74b4b41e172698230.png'} className={s.icon} />
                     <span
                         onDoubleClick={onDoubleClickCallBack}
                         className={spanClassName}
+                        {...restSpanProps}>
 
-                        {...restSpanProps}
-                    >
-                        {/*если нет захардкодженного текста для спана, то значение инпута*/}
-                        {children || restProps.value}
-                    </span>
-                )
+                    {children || restProps.value}
+                            </span>
+                </>)
             }
         </>
     )
