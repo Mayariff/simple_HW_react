@@ -37,7 +37,8 @@ const Greeting: React.FC<GreetingPropsType> = (
                             onKeyPress={onKeyPressEnter}
                             error={error}/>
             <SuperButton onClick={addUser}
-                         disabled={error ? true : false}>
+                         disabled={error ? true : false}
+            >
                 add </SuperButton>
             <span>{totalUsers}</span>
         </div>
