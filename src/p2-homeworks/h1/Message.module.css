@@ -6,23 +6,27 @@
     display: inline-block;
     vertical-align: bottom;
     margin-bottom: 5px;
+
 }
 .avatar img{
     width: 60px;
     height: 60px;
-    border: 1px solid gray;
+    border: 3px solid dodgerblue;
     border-radius: 50%;
+
 }
 .message_name {
-    color: cornflowerblue;
+    color: #1971c7;
 }
 
 .message {
     display: inline-block;
     vertical-align: bottom;
-    width: 200px;
-    background-color: darkgreen;
-    border-radius: 5px;
+    width: 180px;
+    border-right: 3px solid dodgerblue;
+    border-top: 2px solid dodgerblue;
+    background-color: #78c6fc;
+    border-radius: 28px;
     margin: 10px;
     padding: 10px 15px;
     position: relative;
@@ -30,10 +34,10 @@
 .message:before{
     position: absolute;
     content:'';
-    left: -10px;
-    bottom: 0;
+    left: -8px;
+    bottom: 0px;
     border: 16px solid transparent;
-    border-bottom: 30px solid darkgreen;
+    border-bottom: 35px solid #78c6fc;
 
 }
 

@@ -1,3 +1,49 @@
-.range {
+/* Скрывает слайдер, чтобы можно было создать свой */
 
+input[type=range] {
+    -webkit-appearance: none;
+    width: 20%;
+    margin: 5px;
 }
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-ms-track {
+    width: 20%;
+    margin: 5px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+/* Специальные правила для браузеров на движках WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 8px;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #00acee, #0072e0);
+    cursor: pointer;
+    margin-top: -2px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+    box-shadow:  1px 1px 2px rgba(0,0,0,0.1), 0px 0px 2px  rgba(0,0,0,0.1) /* Добавляем классные эффекты для слайдера! */
+}
+
+input[type=range] {
+    width: 20%;
+    height: 6px;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    background: rgba(175, 174, 174, 0.73);
+    border-radius: 2px;
+}
+
+input[type=range]:focus{
+    background: linear-gradient(to right, #bbbdc0, #006bf8);
+}
+
+
+
