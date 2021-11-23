@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/simple_HW_react/static/css/main.0c585a57.chunk.css",
-    "main.js": "/simple_HW_react/static/js/main.fd923ec8.chunk.js",
-    "main.js.map": "/simple_HW_react/static/js/main.fd923ec8.chunk.js.map",
+    "main.js": "/simple_HW_react/static/js/main.dd24086c.chunk.js",
+    "main.js.map": "/simple_HW_react/static/js/main.dd24086c.chunk.js.map",
     "runtime-main.js": "/simple_HW_react/static/js/runtime-main.1baaaeb5.js",
     "runtime-main.js.map": "/simple_HW_react/static/js/runtime-main.1baaaeb5.js.map",
-    "static/js/2.0f096f7d.chunk.js": "/simple_HW_react/static/js/2.0f096f7d.chunk.js",
-    "static/js/2.0f096f7d.chunk.js.map": "/simple_HW_react/static/js/2.0f096f7d.chunk.js.map",
+    "static/js/2.99c651d9.chunk.js": "/simple_HW_react/static/js/2.99c651d9.chunk.js",
+    "static/js/2.99c651d9.chunk.js.map": "/simple_HW_react/static/js/2.99c651d9.chunk.js.map",
     "index.html": "/simple_HW_react/index.html",
     "static/css/main.0c585a57.chunk.css.map": "/simple_HW_react/static/css/main.0c585a57.chunk.css.map",
-    "static/js/2.0f096f7d.chunk.js.LICENSE.txt": "/simple_HW_react/static/js/2.0f096f7d.chunk.js.LICENSE.txt",
+    "static/js/2.99c651d9.chunk.js.LICENSE.txt": "/simple_HW_react/static/js/2.99c651d9.chunk.js.LICENSE.txt",
     "static/media/58e4a4e4fa041a11f796a2014b1bcfa4.c532e884.gif": "/simple_HW_react/static/media/58e4a4e4fa041a11f796a2014b1bcfa4.c532e884.gif",
     "static/media/SmoothJauntyBighornedsheep-max-1mb.61c33806.gif": "/simple_HW_react/static/media/SmoothJauntyBighornedsheep-max-1mb.61c33806.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.1baaaeb5.js",
-    "static/js/2.0f096f7d.chunk.js",
+    "static/js/2.99c651d9.chunk.js",
     "static/css/main.0c585a57.chunk.css",
-    "static/js/main.fd923ec8.chunk.js"
+    "static/js/main.dd24086c.chunk.js"
   ]
 }
