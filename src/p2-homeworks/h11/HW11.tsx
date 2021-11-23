@@ -12,7 +12,7 @@ function HW11() {
         value2 && setValue2(value2)
    }
 
-   let Nv= [value1,value2]
+  /* let [value1,value2]*/
 
     const onChangeRange1 = ([value1,value2]: number[]) => {
 
